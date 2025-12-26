@@ -1,0 +1,711 @@
+body {
+    background-color: rgb(18, 9, 9);
+}
+
+#header {
+    background-color: rgba(191, 255, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+}
+
+#options {
+    background-color: rgba(240, 255, 255, 0);
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-left: 40px; */
+    position: relative;
+    left: 10px;
+    /* background-color: blueviolet;*/
+}
+
+#options div {
+    height: 80%;
+    width: 180px;
+    font-size: 18px;
+    font-family: Geneva, Verdana, sans-serif;
+    /* font-weight: 700; */
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+    transition: all 0s linear 0s;
+    /* background-color:brown; */
+    border-radius: 10px;
+    /* animation-name:optionAnimation ;
+    animation-duration: 2s;
+    animation-timing-function:  linear ;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: calc(0.3s*var(--i)); */
+
+}
+#options #home{
+    animation: homeAnimation 1s linear 0s 1 normal ;
+   
+}
+#options #skills{
+    animation: skillsAnimation 1.2s linear 0s 1 normal ;
+    opacity: 1;
+}
+#options #edu{
+    animation: eduAnimation 1.4s linear 0s 1 normal ;
+    
+}
+#options #exp{
+    animation: expAnimation 1.6s linear 0s 1 normal ;
+}
+#options #train{
+    animation: trainAnimation 1.8s linear 0s 1 normal ;
+}
+
+@keyframes homeAnimation{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity:1;
+    }
+    
+}
+@keyframes skillsAnimation{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+    
+}
+@keyframes eduAnimation{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+    
+}
+@keyframes expAnimation{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+    
+}
+@keyframes trainAnimation{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+    
+}
+/* #options div:hover {
+    background-color: rgb(80, 249, 249);
+
+
+} */
+
+#options a:hover {
+    color:  rgb(80, 249, 249);
+    font-weight: bolder;
+
+}
+
+#title {
+    padding: 0px 0px 20px 100px;
+    height: 100%;
+    width: 200px;
+    /* background-color: rgba(138, 43, 226, 1); */
+    position: relative;
+    bottom: 10px;
+    color: rgb(80, 249, 249);
+    animation: titleAnimation 2s linear 0s 1 normal;
+}
+
+@keyframes titleAnimation {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(1px);
+    }
+
+
+}
+
+#title h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    transition: all 0s linear 0s;
+}
+
+#homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    /* animation: homepageAnimation 2s linear 0s 1 normal; */
+}
+/* @keyframes homepageAnimation {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(1px);
+    }
+} */
+
+
+#image {
+    background-image: url("/image.jpeg");
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    /* margin-right: 40px; */
+    animation: imageAnimation 2s linear 0s 1 normal,newImageAnimation 3s linear 4s infinite alternate;
+
+}
+@keyframes imageAnimation {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes newImageAnimation {
+    from{
+        transform: translateY(1px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+#about {
+    height: 500px;
+    width: 600px;
+    padding-top: 30px;
+
+}
+
+#about span {
+    color: antiquewhite;
+}
+
+#name {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#intro,
+#designation {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo div {
+    height: 40px;
+    width: 40px;
+    border-radius: 25PX;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+}
+
+#github {
+    background-image: url("/github-mark-white.png");
+    background-size: cover;
+}
+
+#linkedin {
+    background-image: url("/InBug-White.png");
+    background-size: cover;
+}
+
+#download {
+    background-color: rgb(30, 144, 144);
+    height: 20px;
+    width: 120px;
+    display: inline-block;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 43px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+#hire {
+    background-color: rgb(30, 144,144);
+    height: 20px;
+    width: 120px;
+    display: inline-block;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 75px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-family: Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+}
+
+#download,
+#hire {
+    transition: all 0s linear 0s;
+}
+
+#download:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+#hire:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+#button {
+
+    width: 450px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#obj{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: objAnimation 3s linear 0s 1 normal;
+}
+@keyframes objAnimation {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+#github{
+    animation: githubAnimation 1s linear 0s 1 normal;
+}
+@keyframes githubAnimation {
+    from{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+#linkedin{
+    animation: linkedinAnimation 1s linear 0s 1 normal;
+}
+@keyframes linkedinAnimation {
+    from{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+#htmlLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/htmllogo.png");
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#cssLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/csslogo.png");
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#jsLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/java-script.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#reactLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/React.png");
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#tailwindLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/Tailwind\ CSS.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+}
+#html,#css,#js,#react,#tailwind{
+    height:200px;
+    width:50px;
+    border-radius: 20px;
+    /* background-color: blueviolet; */
+}
+#frontend{
+    background-color: rgb(18, 9, 9);
+    height:25vh;
+    width:30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 10px;
+    border: 3px solid rgb(30, 144,144);
+    padding-top: 10px;
+    
+}
+#skillspage{
+    height: 100vh;
+    width:100vw;
+    background-color:  rgb(18, 9, 9);
+}
+#homepage{
+    height:80vh;
+    width:100vw;
+
+}
+#html,#css,#react,#c,#python,#dsa,#oops{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width:120px;
+    height: 50px;
+    background-color:  rgba(191, 255, 0, 0);
+    padding-top: 14px;
+    border: 2px solid rgb(30, 144,144);
+    border-radius: 20px;
+}
+#tailwind{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width:160px;
+    height: 50px;
+    background-color:  rgba(191, 255, 0, 0);
+    padding-top: 14px;
+    border: 2px solid rgb(30, 144,144);
+}
+#js,#javascript,#sql{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width:140px;
+    height: 50px;
+    background-color: rgba(191, 255, 0, 0);
+    padding-top: 10px;
+    border: 2px solid rgb(30, 144,144);
+    border-radius: 20px;
+}
+#ps,#lb{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width:180px;
+    height: 50px;
+    background-color: rgba(191, 255, 0, 0);
+    padding-top: 10px;
+    border: 2px solid rgb(30, 144,144);
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+#ps{
+    padding-right:10px ;
+    padding-left: 10px;
+    margin-left: 10px;
+    width:200px;
+}
+#htmlName,#cssName,#jsName,#reactName,#cName,#pythonName,#javascriptName,#sqlName,#dsaName,#oopsName,#lbName{
+    padding-top: 8px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 8px;
+    color: antiquewhite;
+    transition: all 0.5s linear 0s;
+}
+#psName{
+    padding-top: 8px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 4px;
+    color: antiquewhite;
+    transition: all 0.5s linear 0s;
+    padding-right: 5px;
+}
+#htmlName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#dsaName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#oopsName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#lbName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#psName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#cName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#pythonName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#javascriptName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#cssName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#jsName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#reactName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#sqlName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+/* #htmlName{
+    padding-left: 8px;
+} */
+#jsName,#javascriptName{
+    padding-left: 5px;
+    margin-right: 3px;
+}
+#tailwindName{
+    padding-top: 8px;
+    padding-left: 5px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    transition: all 0.5s linear 0s;
+}
+#tailwindName:hover{
+    font-weight: 900;
+    color:rgb(80, 249, 249) ;
+    transform: scale(1.1);
+
+}
+#language,#database,#coreconcept{
+    background-color: rgb(18, 9, 9);
+    height:25vh;
+    width:30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 10px;
+    border: 3px solid rgb(30, 144,144);
+    padding-top: 10px;
+    /* padding-right: 8px; */
+    
+}
+/* #coreconcept{
+    padding-left: 4px;
+} */
+#javascriptLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/java-script.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#cLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/c_logo.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    background-color: aliceblue;
+    
+}
+#pythonLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/python.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#sqlLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/mysqlLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#dsaLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/dsa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#oopsLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/oops.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 7px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#psLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/problem-solving-skills.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-right: 10px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+#lbLogo{
+    height:35px;
+    width:35px;
+    background-image: url("/6518027.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    margin-left: 3px;
+    border: 2px dashed rgb(30, 144,144);
+    cursor: pointer;
+    
+}
+
