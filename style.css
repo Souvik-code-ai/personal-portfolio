@@ -425,6 +425,7 @@ a {
     align-content: center;
     animation:scrollAnimation linear;
     animation-timeline: view();
+    animation-range: entry 0%;
     /* padding-left: 1px;
     padding-right:20px;
     margin-left: 120px; */
@@ -432,15 +433,15 @@ a {
 @keyframes scrollAnimation {
     0%{
         opacity: 0;
-        transform: translateY(-1000px);
+        transform: translateY(1000px);
     }
-    50%{
+    /* 50%{
         opacity:0.5;
         transform: translateY(0px);
-    }
-    to{
+    } */
+    100%{
         opacity: 1;
-        transform: translateY(30px);
+        transform: translateY(0px);
     }
 }
 #homepage{
@@ -824,6 +825,7 @@ a {
 #secondary{
     animation:secondaryAnimation linear;
     animation-timeline: view();
+    animation-range: entry 0%;
     cursor: pointer;
 }
 
@@ -844,6 +846,7 @@ a {
 #higherSecondary{
     animation:higherSecondaryAnimation linear;
     animation-timeline: view();
+    animation-range: entry 0%;
         cursor: pointer;
 }
 @keyframes higherSecondaryAnimation {
@@ -863,6 +866,7 @@ a {
 #college{
     animation:collegeAnimation linear;
     animation-timeline: view();
+    animation-range: entry 0%;
         cursor: pointer;
 }
 @keyframes collegeAnimation {
